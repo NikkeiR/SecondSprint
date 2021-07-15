@@ -4,7 +4,7 @@
     $result = mysqli_query($conn, $sql);
 
     print("<table class='table'><thead>");
-    print("<tr><th>ID</th><th>Project</th><th>Name</th></tr>");
+    print("<tr><th>ID</th><th>Name</th><th>Project</th></tr>");
     print("</thead>");
     if (mysqli_num_rows($result) > 0) { 
         while($row = mysqli_fetch_assoc($result)) {
