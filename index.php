@@ -1,4 +1,5 @@
 <?php require_once("./components/mysql_conn.php"); ?>
+<?php require_once("./components/create.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +23,12 @@
     </header>
     <section class="container">
         <?php require_once("./components/projects_data.php"); ?>
+    </section>
+    <section class="container">
+        <form action="" method="POST">
+            <input type="text" name="project" placeholder="Project name"><br>
+            <input type="submit" name="create_project" value="Submit">
+        </form>
     </section>
 </body>
 </html>
