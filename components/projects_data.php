@@ -17,5 +17,5 @@
     }
     print("</table>");
 
-    // mysqli_close($conn);
+    mysqli_close($conn);
 ?>
