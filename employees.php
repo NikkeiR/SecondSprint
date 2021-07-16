@@ -1,4 +1,5 @@
 <?php require_once("./components/mysql_conn.php"); ?>
+<?php require_once("./components/create_employee.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +23,13 @@
     </header>
     <section class="container">
         <?php require_once("./components/employees_data.php"); ?>
+    </section>
+    <section class="container">
+        <form action="" method="POST">
+            <input type="text" name="employee" placeholder="Name"><br>
+            <input type="text" name="project_id" placeholder="Project ID"><br>
+            <input type="submit" name="create_employee" value="Submit">
+        </form>
     </section>
 </body>
 </html>

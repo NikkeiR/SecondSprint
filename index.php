@@ -1,5 +1,5 @@
 <?php require_once("./components/mysql_conn.php"); ?>
-<?php require_once("./components/create.php"); ?>
+<?php require_once("./components/create_project.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">

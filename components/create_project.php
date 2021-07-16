@@ -1,5 +1,5 @@
 <?php 
-    if(isset($_POST["create_project"]) && !empty($_POST["create_project"])) {
+    if(isset($_POST["create_project"]) && !empty($_POST["project"])) {
         $stmt = $conn->prepare("INSERT INTO Projects (name) VALUES (?)");
         $stmt->bind_param("s", $name);
         $name = $_POST["project"];
