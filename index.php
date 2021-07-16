@@ -1,5 +1,6 @@
 <?php require_once("./components/mysql_conn.php"); ?>
-<?php require_once("./components/create_project.php"); ?>
+<?php require_once("./components/create/create_project.php"); ?>
+<?php require_once("./components/delete/delete_project.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,12 +23,12 @@
         </ul>
     </header>
     <section class="container">
-        <?php require_once("./components/projects_data.php"); ?>
+        <?php require_once("./components/data/projects_data.php"); ?>
     </section>
     <section class="container">
         <form action="" method="POST">
             <input type="text" name="project" placeholder="Project name"><br>
-            <input type="submit" name="create_project" value="Submit">
+            <input type="submit" name="create_project" value="Create project">
         </form>
     </section>
 </body>

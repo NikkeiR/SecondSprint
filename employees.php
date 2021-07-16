@@ -1,5 +1,7 @@
 <?php require_once("./components/mysql_conn.php"); ?>
-<?php require_once("./components/create_employee.php"); ?>
+<?php require_once("./components/create/create_employee.php"); ?>
+<?php require_once("./components/delete/delete_employee.php"); ?>
+<!-- <?php require_once("./components/update/employee_update.php"); ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,14 +24,20 @@
         </ul>
     </header>
     <section class="container">
-        <?php require_once("./components/employees_data.php"); ?>
+        <?php require_once("./components/data/employees_data.php"); ?>
     </section>
     <section class="container">
         <form action="" method="POST">
-            <input type="text" name="employee" placeholder="Name"><br>
+            <input type="text" name="employee" placeholder="Employee name"><br>
             <input type="text" name="project_id" placeholder="Project ID"><br>
-            <input type="submit" name="create_employee" value="Submit">
+            <input type="submit" name="create_employee" value="Add employee">
         </form>
+        <!-- <form action="" method="POST">
+            <input type="text" name="id" placeholder="Employee ID"><br>
+            <input type="text" name="name" placeholder="Employee name"><br>
+            <input type="text" name="id_project" placeholder="Project ID"><br>
+            <input type="submit" name="update_employee" value="Update">
+        </form> -->
     </section>
 </body>
 </html>

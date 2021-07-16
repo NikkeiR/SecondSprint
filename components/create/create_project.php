@@ -4,7 +4,7 @@
         $stmt->bind_param("s", $name);
         $name = $_POST["project"];
         $stmt->execute();
-        header("Location: " . $_SERVER["PHP_SELF"] . "?" . $_SERVER["QUERY_STRING"]);
+        header("Location: " . strtok($_SERVER["REQUEST_URI"], "?"));
         die();
     }
 ?>

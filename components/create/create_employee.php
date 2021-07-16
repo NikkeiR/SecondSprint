@@ -5,7 +5,7 @@
         $firstname = $_POST["employee"];
         $project = $_POST["project_id"];
         $stmt->execute();
-        header("Location: " . $_SERVER["PHP_SELF"] . "?" . $_SERVER["QUERY_STRING"]);
+        header("Location: " . strtok($_SERVER["REQUEST_URI"], "?"));
         die();
     }
 ?>
